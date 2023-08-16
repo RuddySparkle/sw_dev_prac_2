@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title class="text">Register</title>
+</head>
+<body class="text">
+    <div class="container">
+        <h2 class="registertext">Exhibition Booth Register</h2>
+        <form>
+          <div class="form-group">
+            <label class="label" for="companyName">Company Name</label>
+            <input class="input" type="text" id="companyName" name="companyName" required>
+          </div>
+    
+          <div class="form-group">
+            <label class="label" for="boothSize">Booth Size</label>
+            <select class="input" id="boothSize" name="boothSize">
+              <option value="10x10">10x10 sqft</option>
+              <option value="10x15">10x15 sqft</option>
+            </select>
+          </div>
+    
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="includeTable" name="includeTable">
+            <label class="checkbox-label" for="includeTable">Include Table</label>
+          </div>
+    
+          <div class="form-group">
+            <label class="label" for="amountOfChairs">Amount of Chairs</label>
+            <input class="input" type="number" id="amountOfChairs" name="amountOfChairs" min="0">
+          </div>
+    
+          <div class="form-group">
+            <label class="label" for="contactPerson">Contacting Person Name</label>
+            <input class="input" type="text" id="contactPerson" name="contactPerson" required>
+          </div>
+    
+          <div class="form-group">
+            <label class="label" for="phoneNumber">Phone Number</label>
+            <input class="input" type="tel" id="phoneNumber" name="phoneNumber" required>
+          </div>
+    
+          <button class="button" type="submit">Submit</button>
+        </form>
+      </div>
+</body>
+</html>
