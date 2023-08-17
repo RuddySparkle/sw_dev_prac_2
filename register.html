@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="style.css">
   <title class="text">Register</title>
 </head>
-<body class="text">
+<body class="text" background="Components/registerbg.jpg">
     <div class="container">
         <h2 class="registertext">Exhibition Booth Register</h2>
         <form>
@@ -17,9 +17,10 @@
     
           <div class="form-group">
             <label class="label" for="boothSize">Booth Size</label>
-            <select class="input" id="boothSize" name="boothSize">
-              <option value="10x10">10x10 sqft</option>
-              <option value="10x15">10x15 sqft</option>
+            <select class="input" id="boothSize" name="boothSize" required>
+              <option value="" >Not Selected</option>
+              <option value="10x10">10x10 sq.ft.</option>
+              <option value="10x15">10x15 sq.ft.</option>
             </select>
           </div>
     
@@ -30,7 +31,7 @@
     
           <div class="form-group">
             <label class="label" for="amountOfChairs">Amount of Chairs</label>
-            <input class="input" type="number" id="amountOfChairs" name="amountOfChairs" min="0">
+            <input class="input" type="number" id="amountOfChairs" name="amountOfChairs" value=0 min="1" max="10">
           </div>
     
           <div class="form-group">
@@ -43,8 +44,9 @@
             <input class="input" type="tel" id="phoneNumber" name="phoneNumber" required>
           </div>
     
-          <button class="button" type="submit">Submit</button>
+          <button class="button" type="submit" >Submit</button>
         </form>
-      </div>
+    </div>
+    <script src="register.js"></script>
 </body>
 </html>
